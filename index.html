@@ -13,9 +13,9 @@
 
   <style>
     :root {
-      --background-color: #0D3B66; /* deep teal */
-      --card-color: #1F2937; /* dark slate */
-      --highlight-yellow: #FFC83D; /* orchard yellow */
+      --background-color: #0D3B66;
+      --card-color: #1F2937;
+      --highlight-yellow: #FFC83D;
       --text-light: #F3F4F6;
     }
 
@@ -23,10 +23,9 @@
       background-color: var(--background-color);
       font-family: Arial, sans-serif;
       position: relative;
-      overflow: hidden;
+      overflow-x: hidden;
     }
 
-    /* geometric shapes in background */
     .shape {
       position: absolute;
       border-radius: 50%;
@@ -34,25 +33,14 @@
       z-index: 0;
     }
 
-    .shape.circle {
-      background-color: white;
-    }
-
+    .shape.circle { background-color: white; }
     .shape.triangle {
-      width: 0;
-      height: 0;
+      width: 0; height: 0;
       border-left: 20px solid transparent;
       border-right: 20px solid transparent;
       border-bottom: 35px solid white;
-      border-radius: 0;
     }
-
-    .shape.rect {
-      width: 50px;
-      height: 50px;
-      background-color: white;
-      border-radius: 8px;
-    }
+    .shape.rect { width: 50px; height: 50px; background-color: white; border-radius: 8px; }
 
     .card-custom {
       border-radius: 1rem;
@@ -63,20 +51,9 @@
       z-index: 1;
     }
 
-    h1 {
-      color: var(--highlight-yellow);
-      font-weight: 700;
-    }
-
-    .guest-name {
-      color: white;
-      font-size: 2.5rem;
-      font-weight: 900;
-    }
-
-    p {
-      line-height: 1.6;
-    }
+    h1 { color: var(--highlight-yellow); font-weight: 700; }
+    .guest-name { color: white; font-size: 2rem; sm:2.2rem; md:2.5rem; font-weight: 900; }
+    p { line-height: 1.6; }
   </style>
 </head>
 <body class="flex justify-center items-center min-h-screen p-4">
@@ -89,16 +66,16 @@
   <div class="shape rect" style="top: 10%; left: 50%;"></div>
 
   <!-- Main card -->
-  <div class="card card-custom max-w-4xl w-full p-8">
+  <div class="card card-custom w-full max-w-full sm:max-w-2xl md:max-w-4xl p-4 sm:p-6 md:p-8">
     <div class="text-center mb-6">
-      <h1 class="text-3xl md:text-4xl mb-4">
+      <h1 class="text-2xl sm:text-3xl md:text-4xl mb-4">
         Understanding the Software Industry: Roles, Reality & Readiness
       </h1>
       <div class="guest-name mb-2">Ravi Tanna</div>
-      <p class="text-gray-300 text-lg">Senior QA Engineer, Jeavio (India) Pvt. Ltd., Vadodara</p>
+      <p class="text-gray-300 text-base sm:text-lg">Senior QA Engineer, Jeavio (India) Pvt. Ltd., Vadodara</p>
     </div>
 
-    <div class="space-y-4 text-gray-100">
+    <div class="space-y-4 text-gray-100 text-sm sm:text-base">
       <p>
         Mr. Ravi Tanna will be visiting our institute on 7th February 2026. With over 8 years of experience in the IT industry, he has worked on large-scale enterprise and cloud-based software applications across domains such as Telecom, Human Capital Management, Smart Metering, and Networking.
       </p>
