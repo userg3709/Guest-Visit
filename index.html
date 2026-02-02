@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Software Industry Guest Talk</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    :root {
+      --background-color: #0D3B66; /* deep teal */
+      --card-color: #1F2937; /* dark slate */
+      --highlight-yellow: #FFC83D; /* orchard yellow */
+      --text-light: #F3F4F6;
+    }
+
+    body {
+      background-color: var(--background-color);
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* geometric shapes in background */
+    .shape {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.2;
+      z-index: 0;
+    }
+
+    .shape.circle {
+      background-color: white;
+    }
+
+    .shape.triangle {
+      width: 0;
+      height: 0;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-bottom: 35px solid white;
+      border-radius: 0;
+    }
+
+    .shape.rect {
+      width: 50px;
+      height: 50px;
+      background-color: white;
+      border-radius: 8px;
+    }
+
+    .card-custom {
+      border-radius: 1rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+      background-color: var(--card-color);
+      color: var(--text-light);
+      position: relative;
+      z-index: 1;
+    }
+
+    h1 {
+      color: var(--highlight-yellow);
+      font-weight: 700;
+    }
+
+    .guest-name {
+      color: white;
+      font-size: 2.5rem;
+      font-weight: 900;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body class="flex justify-center items-center min-h-screen p-4">
+
+  <!-- Geometric shapes -->
+  <div class="shape circle" style="width: 100px; height:100px; top: 10%; left: 5%;"></div>
+  <div class="shape circle" style="width: 60px; height:60px; top: 70%; left: 80%;"></div>
+  <div class="shape triangle" style="top: 20%; left: 70%;"></div>
+  <div class="shape rect" style="top: 60%; left: 20%;"></div>
+  <div class="shape rect" style="top: 10%; left: 50%;"></div>
+
+  <!-- Main card -->
+  <div class="card card-custom max-w-4xl w-full p-8">
+    <div class="text-center mb-6">
+      <h1 class="text-3xl md:text-4xl mb-4">
+        Understanding the Software Industry: Roles, Reality & Readiness
+      </h1>
+      <div class="guest-name mb-2">Ravi Tanna</div>
+      <p class="text-gray-300 text-lg">Senior QA Engineer, Jeavio (India) Pvt. Ltd., Vadodara</p>
+    </div>
+
+    <div class="space-y-4 text-gray-100">
+      <p>
+        Mr. Ravi Tanna will be visiting our institute on 7th February 2026. With over 8 years of experience in the IT industry, he has worked on large-scale enterprise and cloud-based software applications across domains such as Telecom, Human Capital Management, Smart Metering, and Networking.
+      </p>
+
+      <p>
+        His professional expertise includes modern software quality engineering practices involving Agile methodologies, Cypress-based automation frameworks, API validation using Postman and Swagger, performance engineering with JMeter, backend data validation using PostgreSQL and SQL Server, and quality assurance of cloud-hosted applications deployed on AWS environments.
+      </p>
+
+      <p>
+        In addition to core industry experience, he has also explored Python-based automation and AI-assisted solutions to improve engineering efficiency and real-world problem solving. His industry journey reflects strong hands-on exposure to advanced tools, evolving technologies, and practical software engineering practices followed in today’s software organizations.
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>
